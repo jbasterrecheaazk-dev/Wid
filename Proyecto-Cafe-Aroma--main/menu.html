@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - Aroma</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="img/cafe_aroma_logo.png" alt="Logo de Café Aroma" class="logo">
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="menu.html">Menú</a>
+                <a href="carrito.html">Carrito</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="menu">
+            <h1>Nuestra Carta</h1>
+            <p class="take-away-note">Todos nuestros productos están disponibles para llevar.</p>
+            <div class="productos">
+                <div class="producto">
+                    <img src="img/espresso.jpg" alt="Espresso" class="producto-img">
+                    <h3>Espresso</h3>
+                    <p>La esencia pura del café.</p>
+                    <div class="opciones">
+                        <label>
+                            <input type="radio" name="espresso-size" value="Pequeño" data-precio="2.00" checked> Pequeño (2.00 €)
+                        </label>
+                        <label>
+                            <input type="radio" name="espresso-size" value="Grande" data-precio="3.00"> Grande (3.00 €)
+                        </label>
+                    </div>
+                    <button class="add-to-cart" data-nombre="Espresso">Añadir al carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="img/capuchino.jpeg" alt="Capuchino" class="producto-img">
+                    <h3>Capuchino</h3>
+                    <p>Combinación perfecta de café, leche y espuma.</p>
+                    <div class="opciones">
+                        <label>
+                            <input type="radio" name="capuchino-size" value="Pequeño" data-precio="3.00" checked> Pequeño (3.00 €)
+                        </label>
+                        <label>
+                            <input type="radio" name="capuchino-size" value="Grande" data-precio="4.00"> Grande (4.00 €)
+                        </label>
+                    </div>
+                    <button class="add-to-cart" data-nombre="Capuchino">Añadir al carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="img/cafe_latte.jpeg" alt="Café Latte" class="producto-img">
+                    <h3>Café Latte</h3>
+                    <p>Un suave y cremoso café con leche.</p>
+                    <div class="opciones">
+                        <label>
+                            <input type="radio" name="latte-size" value="Pequeño" data-precio="3.20" checked> Pequeño (3.20 €)
+                        </label>
+                        <label>
+                            <input type="radio" name="latte-size" value="Grande" data-precio="4.20"> Grande (4.20 €)
+                        </label>
+                    </div>
+                    <button class="add-to-cart" data-nombre="Café Latte">Añadir al carrito</button>
+                </div>
+
+                <div class="producto">
+                    <img src="img/te_hierbas.jpeg" alt="Té e infusiones" class="producto-img">
+                    <h3>Té e Infusiones</h3>
+                    <p>Variedad de tés selectos e infusiones de la casa.</p>
+                    <label for="te-select">Tipo:</label>
+                    <select id="te-select" class="te-select">
+                        <option value="Té Verde" data-precio="2.50">Té Verde (2.50 €)</option>
+                        <option value="Té Negro" data-precio="2.50">Té Negro (2.50 €)</option>
+                        <option value="Infusión de Hierbas" data-precio="2.80">Infusión de Hierbas (2.80 €)</option>
+                    </select>
+                    <button class="add-to-cart" data-nombre="Té e Infusiones">Añadir al carrito</button>
+                </div>
+                
+                <div class="producto">
+                    <img src="img/tartas.jpeg" alt="Tartas" class="producto-img">
+                    <h3>Tarta de Chocolate</h3>
+                    <p>Deliciosa tarta de chocolate fundido.</p>
+                    <span class="precio">4.50 €</span>
+                    <button class="add-to-cart" data-nombre="Tarta de Chocolate" data-precio="4.50">Añadir al carrito</button>
+                </div>
+                
+                <div class="producto">
+                    <img src="img/cafe_grano2.jpeg" alt="Paquete de café en grano o molido" class="producto-img">
+                    <h3>Café de Origen (500g)</h3>
+                    <p>Café de especialidad, recién tostado.</p>
+                    <label for="nacionalidad">Nacionalidad:</label>
+                    <select class="nacionalidad-select">
+                        <option value="Colombia" data-precio="12.00">Colombia (12.00 €)</option>
+                        <option value="Etiopía" data-precio="13.50">Etiopía (13.50 €)</option>
+                        <option value="Brasil" data-precio="11.00">Brasil (11.00 €)</option>
+                    </select>
+
+                    <div class="opciones">
+                        <label>
+                            <input type="radio" name="grano-formato" value="En Grano" checked> En Grano
+                        </label>
+                        <label>
+                            <input type="radio" name="grano-formato" value="Molido"> Molido
+                        </label>
+                    </div>
+
+                    <button class="add-to-cart" data-nombre="Café de Origen">Añadir al carrito</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Aroma. Todos los derechos reservados.</p>
+    </footer>
+    <script src="scriptV3.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Espresso",
+      "descripcion": "La esencia pura del café.",
+      "imagen": "img/espresso.jpg",
+      "tipo": "radio",
+      "opciones": [
+        { "variante": "Pequeño", "precio": 2.00 },
+        { "variante": "Grande", "precio": 3.00 }
+      ]
+    },
+    {
+      "id": 2,
+      "nombre": "Capuchino",
+      "descripcion": "Combinación perfecta de café, leche y espuma.",
+      "imagen": "img/capuchino.jpeg",
+      "tipo": "radio",
+      "opciones": [
+        { "variante": "Pequeño", "precio": 3.00 },
+        { "variante": "Grande", "precio": 4.00 }
+      ]
+    },
+    {
+      "id": 3,
+      "nombre": "Café Latte",
+      "descripcion": "Un suave y cremoso café con leche.",
+      "imagen": "img/cafe_latte.jpeg",
+      "tipo": "radio",
+      "opciones": [
+        { "variante": "Pequeño", "precio": 3.20 },
+        { "variante": "Grande", "precio": 4.20 }
+      ]
+    },
+    {
+      "id": 4,
+      "nombre": "Té e Infusiones",
+      "descripcion": "Variedad de tés selectos e infusiones de la casa.",
+      "imagen": "img/te_hierbas.jpeg",
+      "tipo": "select",
+      "opciones": [
+        { "variante": "Té Verde", "precio": 2.50 },
+        { "variante": "Té Negro", "precio": 2.50 },
+        { "variante": "Infusión de Hierbas", "precio": 2.80 }
+      ]
+    },
+    {
+      "id": 5,
+      "nombre": "Tarta de Chocolate",
+      "descripcion": "Deliciosa tarta de chocolate fundido.",
+      "imagen": "img/tartas.jpeg",
+      "tipo": "fijo",
+      "precio": 4.50
+    },
+    {
+      "id": 6,
+      "nombre": "Café de Origen (500g)",
+      "descripcion": "Café de especialidad, recién tostado.",
+      "imagen": "img/cafe_grano2.jpeg",
+      "tipo": "complejo",
+      "opciones": [
+        { "variante": "Colombia", "precio": 12.00 },
+        { "variante": "Etiopía", "precio": 13.50 },
+        { "variante": "Brasil", "precio": 11.00 }
+      ],
+      "formatos": ["En Grano", "Molido"]
+    }
+  ]
+}

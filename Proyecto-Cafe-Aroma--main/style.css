@@ -1,0 +1,465 @@
+/*
+ * Hoja de Estilos de Café Aroma
+ */
+
+/* --- Estilos Generales --- */
+
+:root {
+    --color-marron-oscuro: #6a4b3a;
+    --color-marron-texto: #4a3329;
+    --color-beige-claro: #f4e8d8;
+    --color-blanco: #fff;
+    --color-rojo-eliminar: #d9534f;
+    --color-accent: #8c7161;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-beige-claro);
+    color: var(--color-marron-texto);
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* --- Estilos del Encabezado (Header) y Navegación --- */
+
+header {
+    background-color: var(--color-marron-oscuro);
+    color: var(--color-blanco);
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 60px;
+    border-radius: 5px;
+}
+
+.nav-links a {
+    color: var(--color-blanco);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: var(--color-beige-claro);
+}
+
+main {
+    padding: 2rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --- ESTILOS DE LA PÁGINA DE INICIO (INDEX) --- */
+
+.inicio-alternativo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+    padding: 4rem 0;
+}
+
+.inicio-info {
+    flex: 1;
+    min-width: 300px;
+    padding-right: 20px;
+}
+
+.inicio-info h1 {
+    font-size: 3rem;
+    color: var(--color-marron-oscuro);
+    margin-bottom: 1rem;
+}
+
+.inicio-info p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.inicio-imagen {
+    flex: 1;
+    min-width: 300px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.inicio-imagen img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--color-marron-oscuro);
+    color: var(--color-blanco);
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease-in-out;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: var(--color-accent);
+}
+
+/* --- Estilos del Menú (Carta) --- */
+
+.menu {
+    text-align: center;
+}
+
+.menu h1 {
+    font-size: 2.5rem;
+    color: var(--color-marron-oscuro);
+    margin-bottom: 1rem;
+}
+
+.take-away-note {
+    font-style: italic;
+    color: #8c7161;
+    margin-bottom: 2rem;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.producto {
+    background-color: var(--color-blanco);
+    border: 1px solid #e8dccb;
+    border-radius: 10px;
+    padding: 25px;
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+}
+
+.producto-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.precio {
+    font-weight: bold;
+    color: var(--color-marron-texto);
+    font-size: 1.3rem;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.opciones {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: left;
+    display: inline-block;
+}
+
+.opciones label {
+    display: block;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.opciones input[type="radio"] {
+    margin-right: 8px;
+}
+
+.producto select {
+    width: calc(100% - 20px);
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid var(--color-beige-claro);
+    margin-top: 10px;
+    margin-bottom: 15px;
+    background-color: var(--color-blanco);
+    color: var(--color-marron-texto);
+}
+
+/* --- Formulario de Contacto --- */
+
+.contacto {
+    background-color: var(--color-blanco);
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.contacto h1 {
+    font-size: 2.5rem;
+    color: var(--color-marron-oscuro);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.contacto form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: var(--color-marron-oscuro);
+    font-size: 1.1rem;
+}
+
+.contacto input, .contacto textarea {
+    padding: 12px;
+    border: 1px solid #e8dccb;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: var(--color-marron-texto);
+}
+
+.contacto input:focus, .contacto textarea:focus {
+    outline: none;
+    border-color: #8c7161;
+    box-shadow: 0 0 5px rgba(139, 113, 97, 0.3);
+}
+
+.contacto button[type="submit"] {
+    background-color: var(--color-marron-oscuro);
+    color: var(--color-blanco);
+    border: none;
+    padding: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.contacto button[type="submit"]:hover {
+    background-color: #8c7161;
+}
+
+#mensaje-envio {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* --- ESTILOS DEL CARRITO (MEJORADOS CON +/-) --- */
+
+.carrito-container {
+    background-color: var(--color-blanco);
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.carrito-container h1 {
+    font-size: 2.5rem;
+    color: var(--color-marron-oscuro);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+#lista-carrito {
+    list-style-type: none;
+    padding: 0;
+}
+
+#lista-carrito li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px 10px;
+    border-bottom: 1px solid #e8dccb;
+}
+
+.nombre-producto {
+    flex-basis: 100%;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--color-marron-texto);
+    font-size: 1.1rem;
+}
+
+.controles-cantidad {
+    display: flex;
+    align-items: center;
+}
+
+.controles-cantidad .cantidad-item {
+    margin: 0 12px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.btn-sumar, .btn-restar {
+    background-color: var(--color-accent);
+    color: var(--color-blanco);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-sumar:hover, .btn-restar:hover {
+    background-color: var(--color-marron-oscuro);
+}
+
+.total-producto {
+    font-weight: bold;
+    color: var(--color-marron-oscuro);
+    font-size: 1.1rem;
+}
+
+.eliminar-item {
+    background-color: var(--color-rojo-eliminar);
+    color: var(--color-blanco);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.eliminar-item:hover {
+    background-color: #c9302c;
+}
+
+.carrito-total {
+    text-align: right;
+    margin-top: 30px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--color-marron-oscuro);
+}
+
+.carrito-acciones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn-secundario {
+    background-color: #8c7161;
+    color: var(--color-blanco);
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-secundario:hover {
+    background-color: var(--color-marron-oscuro);
+}
+
+/* --- Pie de Página (Footer) --- */
+
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background-color: var(--color-marron-texto);
+    color: var(--color-blanco);
+    margin-top: 3rem;
+    width: 100%;
+}
+
+/* --- Responsive para Móviles --- */
+
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        padding: 1rem 5%;
+    }
+
+    .nav-links {
+        margin-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .nav-links a {
+        margin: 0 5px;
+    }
+    
+    .inicio-alternativo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .inicio-info {
+        padding-right: 0;
+    }
+
+    .productos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .producto {
+        width: 90%;
+        max-width: 350px;
+    }
+
+    .carrito-container, .contacto {
+        padding: 20px;
+    }
+    
+    /* Para el carrito en móvil */
+    #lista-carrito li {
+        justify-content: center;
+        gap: 10px;
+    }
+    .nombre-producto {
+        text-align: center;
+    }
+    .total-producto {
+        flex-basis: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
