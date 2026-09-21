@@ -1,0 +1,25 @@
+.wrapper {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: solid;
+}
+header {
+    border-bottom: solid;
+    margin-bottom: 10px;
+    text-align: center;
+}
+footer {
+    
+}
+.Pie {
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.Pie, Text1 {
+    text-align: center;
+}
+.Pie, Text2 {
+    text-align: center;
+}
+.Pie, Text3 {
+    text-align: center;
+}
