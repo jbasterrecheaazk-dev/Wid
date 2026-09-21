@@ -1,0 +1,26 @@
+header {
+    text-align: center;
+	position: fixed;
+}
+.Hasiera {
+    justify-content: center;
+    text-align: center;
+    width: 500px;
+    margin: auto;
+}
+.Gorputza-1 {
+    text-align: justify;
+    background-color: aqua;
+}
+.Gorputza-2 {
+    text-align: justify;
+    background-color: aqua;
+}
+.Gorputza-3 {
+    text-align: justify;
+    background-color: aqua;
+}
+.Gorputza-4 {
+    text-align: justify;
+    background-color: aqua;
+}
