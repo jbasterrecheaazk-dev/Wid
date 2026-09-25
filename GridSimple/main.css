@@ -4,6 +4,9 @@ section {
     flex-wrap: wrap;
     width: 100%;
 }
+.Grid {
+    
+}
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
