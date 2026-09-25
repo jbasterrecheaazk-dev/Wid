@@ -1,6 +1,20 @@
-.wrapper {  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  border: solid;
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.wrapper {
+    /*display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;*/
+    border: solid;
+    width: 80%;
+    background-color: blue;
+}
+.SubMenu {
+    width: 10%;
+    background-color: red;
 }
 header {
     border-bottom: solid;
@@ -19,9 +33,4 @@ header {
 }
 .Text3 {
     text-align: center;
-}
-.g {
-    display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
 }
