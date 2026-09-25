@@ -5,16 +5,16 @@ section {
     width: 100%;
 }
 .wrapper {
-    /*display: grid;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;*/
+    grid-template-rows: 1fr 1fr;
     border: solid;
     width: 80%;
-    background-color: blue;
+    /*background-color: blue;*/
 }
 .SubMenu {
-    width: 10%;
-    background-color: red;
+    width: 18%;
+    /*background-color: red;*/
 }
 header {
     border-bottom: solid;
