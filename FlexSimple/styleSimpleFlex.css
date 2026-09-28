@@ -1,0 +1,27 @@
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    justify-content: space-between;
+}
+header img {
+    border-radius: 0%;
+   width: 200px;
+}
+header nav {
+    display: flex;
+    flex-direction: row;
+    padding-right: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+header ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+main {
+    background-color: antiquewhite;
+}
