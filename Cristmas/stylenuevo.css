@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-primary);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+nav {
+    top: 0;
+    display: flex;
+    position: sticky;
+    color: white;
+    background-color: black;
+    text-decoration-color: white;
+}
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+/* Kolore nagusiak */
+  --bg-primary: #f8f9fa;
+  --bg-dark: #000000;
+  --bg-card: #ffffff;
+  
+  /* Colores de marca y acento */
+  --color-accent: #ff5733;
+  --color-accent-hover: #ff5733;
+  --color-brand: #000000;
+  
+  /* testu koloreak*/
+  --text-primary: #1a1a1a;
+  --text-heading: #343a40;
+  --text-muted: #6c757d;
+  --text-light: #ffffff;
+  
+  /* Elur malutak */
+  --snowflake-color: #ced4da;
+  --snowflake-shadow: rgba(255, 255, 255, 0.8);
+  
+  /* border & shadows*/
+  --border-card: rgba(0, 0, 0, 0.03);
+  --border-card-hover: rgba(0, 0, 0, 0.1);
+  --shadow-card-initial: rgba(0, 0, 0, 0.05);
+  --shadow-card-hover: rgba(0, 0, 0, 0.22);
