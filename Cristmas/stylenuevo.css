@@ -1,5 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    /*background-color: white;*/
     background-color: var(--bg-primary);
     margin: 0;
     padding: 0;
@@ -8,7 +9,8 @@ body {
 .snowflake {
   position: absolute;
   top: -20px;
-  color: #fff;
+  color: #ced4da;
+  shadow: rgba(255, 255, 255, 0.8);
   font-size: 1rem;
   animation: fall linear infinite;
 }
@@ -55,6 +57,36 @@ nav ul li a {
     list-style-type: none;
     padding-left: 50px;
     text-decoration: none;
+}
+.main-title {
+  color: orange;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+.secondary-title {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+.event-grid {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+
+}
+.event-card {
+  display: grid;
+  width: 300px;
+  margin: auto;
+  border: solid;
+  text-align: center;
+}
+section img {
+  width: 100%;
+}
+.footer {
+  text-align: center;
+  color: white;
+  background-color: black;
 }
 /* Kolore nagusiak 
   --bg-primary: #f8f9fa;
