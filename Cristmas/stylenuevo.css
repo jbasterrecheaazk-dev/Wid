@@ -68,21 +68,24 @@ nav ul li a {
   font-family: 'Courier New', Courier, monospace;
 }
 .event-grid {
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+margin-left: 300px;
+margin-right: 300px;
+/*flex-direction: row;
+flex-wrap: wrap;*/
 
 }
 .event-card {
   display: grid;
-  /*grid-template-columns: repeat(3, 1fr);*/
   margin: auto;
   border: solid;
   text-align: center;
   border-radius: 10px;
   box-shadow: lightgrey, 50px;
    width: 300px;
-   min-height: 500px;
+   min-height: 450px;
+   margin: 10px;
 }
 section img {
   width: 100%;
