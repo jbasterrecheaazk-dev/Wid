@@ -9,5 +9,13 @@ body {
     overflow-x: hidden;
 }
 header {
+    /*
+    position: relative;
+    */
     position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+header span {
+    color: cadetblue;
 }
