@@ -19,3 +19,7 @@ header {
 header span {
     color: cadetblue;
 }
+header a {
+    color: white;
+    text-decoration: none;
+}
